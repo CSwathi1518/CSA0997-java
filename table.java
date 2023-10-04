@@ -1,4 +1,4 @@
-import jav.util.Scanner;
+import java.util.Scanner;
 public class multiplicationtable{
     public static void main(String[] args){
         Scanner input=new Scanner(System.in);
@@ -8,7 +8,7 @@ public class multiplicationtable{
         System.out.print("enter the range :");
         int r=range.nextInt();
         for(int i=1;i<=r;i++){
-            System.out.prinln(n+"*"+i+"="+n*i);
+            System.out.println(n+"*"+i+"="+n*i);
         }
     }
 }
