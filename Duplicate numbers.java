@@ -1,8 +1,8 @@
-import java.util.Scanner;
-public class maxmin{
+import java.util.*;
+class dup{
     public static void main(String[] args){
         Scanner input=new Scanner(System.in);
-        System.out.print("Enter the array size: ");
+        System.out.println("Enter the array size: ");
         int n=input.nextInt();
         int i,j;
         int a[]=new int[n];
