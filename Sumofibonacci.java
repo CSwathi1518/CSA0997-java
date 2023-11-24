@@ -1,6 +1,6 @@
 import java.util.*;
 public class sumevenfib {
-    static int Fib_Even_Sum(int N)	
+    static int FibEvenSum(int N)	
     {
         if (N <= 0)
             return 0;
@@ -8,10 +8,10 @@ public class sumevenfib {
         fib[0] = 0;
         fib[1] = 1;
         int s = 0;
-        for (int j = 2; j <= 2 * N; j++) {
-            fib[j] = fib[j - 1] + fib[j - 2];
-            if (j % 2 == 0)
-                s += fib[j];
+        for (int i = 2; i <= 2 * N; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+            if (i % 2 == 0)
+                s += fib[i];
         }
         return s;
     }
@@ -20,7 +20,6 @@ public class sumevenfib {
         int N = 4;
         System.out.println(
             "Even sum of fibonacci series till number " + N
-            + " is: " + +Fib_Even_Sum(N));
+            + " is: " + +FibEvenSum(N));
      }
 }
-
